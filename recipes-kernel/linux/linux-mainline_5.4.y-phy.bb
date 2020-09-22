@@ -15,7 +15,7 @@ SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
-INTREE_DEFCONFIG = "imx_v6_v7_defconfig"
+INTREE_DEFCONFIG = "imx_v6_v7_defconfig imx6_phytec_machine.config"
 
 COMPATIBLE_MACHINE  = "^("
 COMPATIBLE_MACHINE .=  "phyboard-mira-imx6-3"
