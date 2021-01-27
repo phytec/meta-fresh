@@ -67,6 +67,8 @@ COMPATIBLE_MACHINE .= "|phycore-emmc-am335x-1"
 
 INTREE_DEFCONFIG_mx6ul = "imx_v7_defconfig"
 
+COMPATIBLE_MACHINE .= "|phyboard-mira-imx6-13"
+
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-2"
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-3"
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-4"
