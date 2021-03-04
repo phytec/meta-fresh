@@ -50,3 +50,5 @@ do_deploy_append_mx8m() {
         unset  i
    fi
 }
+
+COMPATIBLE_MACHINE = "phyboard-pollux-imx8mp-1"
