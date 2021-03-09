@@ -51,4 +51,17 @@ do_deploy_append_mx8m() {
    fi
 }
 
-COMPATIBLE_MACHINE = "phyboard-pollux-imx8mp-1"
+do_deploy_append_rk3288 () {
+    # deploy SPL images for USB, SD and SPI boot sources.
+    ${B}/tools/mkimage -n rk3288 -T rkimage -d ${B}/${SPL_BINARY} ${DEPLOYDIR}/${SPL_BINARYNAME}.rkimage
+    ${B}/tools/mkimage -n rk3288 -T rksd -d ${B}/${SPL_BINARY} ${DEPLOYDIR}/${SPL_BINARYNAME}.rksd
+    ${B}/tools/mkimage -n rk3288 -T rkspi -d ${B}/${SPL_BINARY} ${DEPLOYDIR}/${SPL_BINARYNAME}.rkspi
+    cat ${B}/u-boot-dtb.bin >> ${DEPLOYDIR}/${SPL_BINARYNAME}.rkimage
+    cat ${B}/u-boot-dtb.bin >> ${DEPLOYDIR}/${SPL_BINARYNAME}.rksd
+    cat ${B}/u-boot-dtb.bin >> ${DEPLOYDIR}/${SPL_BINARYNAME}.rkspi
+}
+
+COMPATIBLE_MACHINE = "^("
+COMPATIBLE_MACHINE .= "phyboard-pollux-imx8mp-1"
+COMPATIBLE_MACHINE .= "|phycore-rk3288-3"
+COMPATIBLE_MACHINE .= ")$"
