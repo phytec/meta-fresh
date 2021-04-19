@@ -37,4 +37,10 @@ COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-5"
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-6"
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-7"
 COMPATIBLE_MACHINE .= "|phyboard-segin-imx6ul-8"
+
+COMPATIBLE_MACHINE .= "|phyflex-imx6-1"
+COMPATIBLE_MACHINE .= "|phyflex-imx6-2"
+COMPATIBLE_MACHINE .= "|phyflex-imx6-8"
+
+COMPATIBLE_MACHINE .= "|phyboard-nunki-imx6-1"
 COMPATIBLE_MACHINE .= ")$"
