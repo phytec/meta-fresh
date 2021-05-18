@@ -64,11 +64,12 @@ COMPATIBLE_MACHINE .= "|phycore-r2-am335x-5"
 COMPATIBLE_MACHINE .= "|phycore-r2-am335x-6"
 COMPATIBLE_MACHINE .= "|phycore-emmc-am335x-1"
 
-
 INTREE_DEFCONFIG_mx6 = "imx_v7_defconfig"
 
+COMPATIBLE_MACHINE .= "|phyboard-mira-imx6-3"
+COMPATIBLE_MACHINE .= "|phyboard-mira-imx6-5"
 COMPATIBLE_MACHINE .= "|phyboard-mira-imx6-13"
-
+COMPATIBLE_MACHINE .= "|phyboard-mira-imx6-14"
 
 INTREE_DEFCONFIG_mx6ul = "imx_v7_defconfig"
 
