@@ -5,6 +5,7 @@ inherit phygittag
 include recipes-kernel/linux/linux-common.inc
 
 DEFAULT_PREFERENCE = "-1"
+LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 GIT_URL = "git://git.phytec.de/${PN}"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
