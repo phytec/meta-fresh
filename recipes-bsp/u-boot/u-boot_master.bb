@@ -15,7 +15,7 @@ DEFAULT_PREFERENCE = "-1"
 
 # Location known to imx-boot component, where U-Boot artifacts
 # should be additionally deployed.
-# See below note above do_deploy_append_mx8m for the purpose of
+# See below note above do_deploy:append:mx8m for the purpose of
 # this delopyment location
 BOOT_TOOLS = "imx-boot-tools"
 
@@ -33,7 +33,7 @@ PROVIDES += "u-boot"
 # it is required that the U-Boot dtb files are to be deployed into
 # a location known by imx-boot so they could be picked up and
 # inserted into the boot container.
-do_deploy_append_mx8m() {
+do_deploy:append:mx8m() {
     # Deploy the mkimage, u-boot-nodtb.bin and fsl-imx8m*-XX.dtb for mkimage to generate boot binary
     if [ -n "${UBOOT_CONFIG}" ]; then
         for config in ${UBOOT_MACHINE}; do
@@ -53,7 +53,7 @@ do_deploy_append_mx8m() {
    fi
 }
 
-do_deploy_append_rk3288 () {
+do_deploy:append:rk3288 () {
     # deploy SPL images for USB, SD and SPI boot sources.
     ${B}/tools/mkimage -n rk3288 -T rkimage -d ${B}/${SPL_BINARY} ${DEPLOYDIR}/${SPL_BINARYNAME}.rkimage
     ${B}/tools/mkimage -n rk3288 -T rksd -d ${B}/${SPL_BINARY} ${DEPLOYDIR}/${SPL_BINARYNAME}.rksd

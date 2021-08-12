@@ -21,7 +21,7 @@ BRANCH = "master"
 S = "${WORKDIR}/git"
 
 INTREE_DEFCONFIG = "multi_v7_defconfig"
-INTREE_DEFCONFIG_aarch64 = "defconfig"
+INTREE_DEFCONFIG:aarch64 = "defconfig"
 
 COMPATIBLE_MACHINE  = "^("
 COMPATIBLE_MACHINE .=  "phyboard-wega-am335x-1"
