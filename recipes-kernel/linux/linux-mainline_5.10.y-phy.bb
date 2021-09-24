@@ -43,4 +43,5 @@ COMPATIBLE_MACHINE .= "|phyflex-imx6-2"
 COMPATIBLE_MACHINE .= "|phyflex-imx6-8"
 
 COMPATIBLE_MACHINE .= "|phyboard-nunki-imx6-1"
+COMPATIBLE_MACHINE .= "|phygate-tauri-s-imx6ul-1"
 COMPATIBLE_MACHINE .= ")$"
