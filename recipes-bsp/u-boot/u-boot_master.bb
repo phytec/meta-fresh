@@ -7,6 +7,7 @@ DEPENDS += "bc-native dtc-native python3-setuptools-native"
 
 GIT_URL = "git://source.denx.de/u-boot.git"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=2ca5f2c35c8cc335f0a19756634782f1"
 
 SRCREV = "${AUTOREV}"
 BRANCH = "master"
