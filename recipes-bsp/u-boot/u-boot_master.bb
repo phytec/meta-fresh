@@ -35,5 +35,6 @@ do_deploy:append:rk3288 () {
 COMPATIBLE_MACHINE = "^("
 COMPATIBLE_MACHINE .= "phyboard-polis-imx8mm-5"
 COMPATIBLE_MACHINE .= "|phyboard-pollux-imx8mp-3"
+COMPATIBLE_MACHINE .= "|phygate-tauri-l-imx8mm-2"
 COMPATIBLE_MACHINE .= "|phycore-rk3288-3"
 COMPATIBLE_MACHINE .= ")$"
