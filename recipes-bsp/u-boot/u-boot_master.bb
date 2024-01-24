@@ -14,12 +14,6 @@ BRANCH = "master"
 
 DEFAULT_PREFERENCE = "-1"
 
-# Location known to imx-boot component, where U-Boot artifacts
-# should be additionally deployed.
-# See below note above do_deploy:append:mx8m for the purpose of
-# this delopyment location
-BOOT_TOOLS = "imx-boot-tools"
-
 PROVIDES += "u-boot"
 
 do_deploy:append:rk3288 () {
