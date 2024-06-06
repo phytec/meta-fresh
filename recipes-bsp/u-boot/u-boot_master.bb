@@ -5,7 +5,7 @@ inherit ${@oe.utils.ifelse(d.getVar('UBOOT_PROVIDES_BOOT_CONTAINER') == '1', 'im
 
 DEPENDS += "bc-native dtc-native python3-setuptools-native"
 
-GIT_URL = "git://source.denx.de/u-boot.git"
+GIT_URL = "git://source.denx.de/u-boot/u-boot.git"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
 
 SRCREV = "${AUTOREV}"
