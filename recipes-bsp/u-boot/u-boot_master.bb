@@ -3,7 +3,7 @@ require recipes-bsp/u-boot/u-boot.inc
 
 DEPENDS += "bc-native dtc-native"
 
-GIT_URL = "git://source.denx.de/u-boot.git"
+GIT_URL = "git://source.denx.de/u-boot/u-boot.git"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
 
 SRCREV = "${AUTOREV}"
