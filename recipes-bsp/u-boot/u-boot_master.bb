@@ -3,7 +3,7 @@ require recipes-bsp/u-boot/u-boot.inc
 
 inherit ${@oe.utils.ifelse(d.getVar('UBOOT_PROVIDES_BOOT_CONTAINER') == '1', 'imx-boot-container', '')}
 
-DEPENDS += "bc-native dtc-native python3-setuptools-native"
+DEPENDS += "bc-native dtc-native python3-setuptools-native gnutls-native"
 
 GIT_URL = "git://source.denx.de/u-boot/u-boot.git;protocol=https"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
