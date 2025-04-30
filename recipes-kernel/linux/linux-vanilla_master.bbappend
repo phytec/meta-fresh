@@ -1,2 +1,2 @@
 # file autocreated by fresher
-SRCREV = "8bac8898fe398ffa3e09075ecea2be511725fb0b"
+SRCREV = "b6ea1680d0ac0e45157a819c41b46565f4616186"
