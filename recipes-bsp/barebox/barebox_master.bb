@@ -9,7 +9,7 @@ DEPENDS += "bison-native flex-native"
 
 DEFAULT_PREFERENCE = "-1"
 
-GIT_URL = "git://git.pengutronix.de/git/barebox.git"
+GIT_URL = "https://git.pengutronix.de/git/barebox"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
