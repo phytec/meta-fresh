@@ -4,6 +4,10 @@
 inherit phygittag
 include recipes-kernel/linux/linux-common.inc
 
+python (){
+    bb.warn("Switch to linux-phytec")
+}
+
 DEFAULT_PREFERENCE = "-1"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
