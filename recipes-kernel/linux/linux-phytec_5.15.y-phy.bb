@@ -11,6 +11,13 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 GIT_URL = "git://github.com/phytec/linux-phytec.git;protocol=https"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
 
+RT_PATCH_FILE = "patch-5.15.189-rt87.patch.xz"
+RT_PATCH = "${KERNELORG_MIRROR}/linux/kernel/projects/rt/5.15/older/${RT_PATCH_FILE};name=rt-patch"
+SRC_URI:append = " \
+    ${@bb.utils.contains('DISTRO_FEATURES', 'preempt-rt', '${RT_PATCH}', '', d)} \
+"
+SRC_URI[rt-patch.sha256sum] = "3c7597527a78ba31bbc7629201f38b5e8a1d787790acf1b5d4b236d6b6fd3b94"
+
 PR = "${INC_PR}.0"
 
 SRCREV = "${AUTOREV}"
