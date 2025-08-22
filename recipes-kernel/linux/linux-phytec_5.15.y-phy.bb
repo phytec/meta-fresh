@@ -2,7 +2,7 @@
 # Author: Norbert Wesp <n.wesp@phytec.de>
 
 inherit kernel kernel-yocto
-inherit phygittag buildinfo kernel-deploy-oftree
+inherit buildinfo kernel-deploy-oftree
 include recipes-kernel/linux/linux-common.inc
 
 DEFAULT_PREFERENCE = "-1"
@@ -21,6 +21,8 @@ SRC_URI[rt-patch.sha256sum] = "3c7597527a78ba31bbc7629201f38b5e8a1d787790acf1b5d
 PR = "${INC_PR}.0"
 
 SRCREV = "${AUTOREV}"
+
+PV = "5.15.y-phy"
 
 S = "${WORKDIR}/git"
 
