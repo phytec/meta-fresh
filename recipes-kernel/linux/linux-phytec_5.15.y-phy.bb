@@ -9,6 +9,7 @@ DEFAULT_PREFERENCE = "-1"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 GIT_URL = "git://github.com/phytec/linux-phytec.git;protocol=https"
+BRANCH = "v5.15.y-phy"
 SRC_URI = "${GIT_URL};branch=${BRANCH}"
 
 RT_PATCH_FILE = "patch-5.15.189-rt87.patch.xz"
