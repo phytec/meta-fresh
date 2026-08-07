@@ -1,5 +1,5 @@
 # file autocreated by fresher
-SRCREV = "c12f412efe7a064b709f451d503e687eefcea18f"
+SRCREV = "64d20846a6dd404facc88430643fe599f7680c07"
 RT_PATCH_FILE = "patch-5.15.211-rt97.patch.xz"
 SRC_URI[rt-patch.sha256sum] = "bbf35d21a2bfe00624d3219394bcac6e9f1b5575968699732d47f9e806bc3e5f"
-PV = "5.15.214-phy"
+PV = "5.15.215-phy"
